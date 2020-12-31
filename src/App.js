@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import P1 from './P1';
+import Login from './backoffice/Login'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import{
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    Redirect
+} from "react-router-dom";
+import BackOffice from "./backoffice/BackOffice";
+class App extends React.Component {
+  render(){
+    return (
+        <div className="App">
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <P1 />
+                    </Route>
+                    <Route path="/backoffice/Login">
+                        <Login />
+                    </Route>
+                    <Route path="/backoffice/BackOffice">
+                        <BackOffice />
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    );
+  }
 }
 
 export default App;
