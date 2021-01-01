@@ -1,6 +1,5 @@
 import React from 'react';
 import News from './News';
-import Login from "./backoffice/Login";
 import{
     BrowserRouter as Router,
     Switch,
@@ -57,9 +56,6 @@ export default function P1(){
             </nav>
 
         </header>
-            <div>
-                test
-            </div>
 
     <div className="first_screen">
         <div className="first-screen-img">
