@@ -6,14 +6,14 @@ class BackOffice extends Component{
     render(){
         return(
             <>
-                <header>
-                    <h1>The BackOffice</h1>
-                </header>
+                <body>
+                <h1 className={"bold"}>The BackOffice</h1><br/>
+                <h3 className={"margin"}> Add a New Article: </h3><br/>
+                <NewForm/><br />
+                <h3 className={"margin"}>All News Articles So Far:</h3><br />
+                <NewsTable/><br />
+                </body>
 
-                <h3> Add a New Article: </h3>
-                <NewForm/>
-                <h3>All News Articles So Far:</h3>
-                <NewsTable/>
             </>
         );
 
