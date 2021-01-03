@@ -11,7 +11,7 @@ class News extends Component{
     }
 
     componentDidMount() {
-        fetch("https://d9qoarugmf.execute-api.eu-west-1.amazonaws.com/api/news")
+        fetch("https://d9qoarugmf.execute-api.eu-west-1.amazonaws.com/api/news?key=11223344")
             .then(res => res.json())
             .then(
                 (result) => {

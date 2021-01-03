@@ -89,59 +89,63 @@ class NewForm extends Component {
     render() {
         return (
             <div className="container">
-                <div>
-                    <input
-                        type="text"
-                        name="title"
-                        placeholder="Title"
-                        onChange={this.handleTitleChanged.bind(this)}
-                        value={this.state.title}
+                <div className={"form-signin"}>
+                    <div className={"row"}>
+                        <div className={"col"}>
+                        <input
+                            type="text"
+                            name="title"
+                            placeholder="Title"
+                            onChange={this.handleTitleChanged.bind(this)}
+                            value={this.state.title}
 
-                    />
-                    <input
-                        type="text"
-                        name="imageSrc"
-                        placeholder="Image Source"
-                        onChange={this.handleimageSrcChanged.bind(this)}
-                        value={this.state.imageSrc}
+                        />
+                        <input
+                            type="text"
+                            name="imageSrc"
+                            placeholder="Image Source"
+                            onChange={this.handleimageSrcChanged.bind(this)}
+                            value={this.state.imageSrc}
 
-                    />
-                    <input
-                        type="text"
-                        name="date"
-                        placeholder="Date"
-                        onChange={this.handleDateChanged.bind(this)}
-                        value={this.state.date}
+                        />
+                        <input
+                            type="text"
+                            name="date"
+                            placeholder="Date"
+                            onChange={this.handleDateChanged.bind(this)}
+                            value={this.state.date}
 
-                    />
-                    <input
-                        type="text"
-                        name="description"
-                        placeholder="Description"
-                        onChange={this.handleDescriptionChanged.bind(this)}
-                        value={this.state.description}
+                        />
+                        <input
+                            type="text"
+                            name="description"
+                            placeholder="Description"
+                            onChange={this.handleDescriptionChanged.bind(this)}
+                            value={this.state.description}
 
-                    />
-                    <input
-                        type="text"
-                        name="link"
-                        placeholder="Link"
-                        onChange={this.handleLinkChanged.bind(this)}
-                        value={this.state.link}
+                        />
+                        <input
+                            type="text"
+                            name="link"
+                            placeholder="Link"
+                            onChange={this.handleLinkChanged.bind(this)}
+                            value={this.state.link}
 
-                    />
-                    <input
-                        type="boolean"
-                        name="firstNew"
-                        placeholder="firstNew"
-                        onChange={this.handleFirstNewChanged.bind(this)}
-                        value={this.state.firstNew}
+                        />
+                        <input
+                            type="boolean"
+                            name="firstNew"
+                            placeholder="firstNew"
+                            onChange={this.handleFirstNewChanged.bind(this)}
+                            value={this.state.firstNew}
 
-                    />
-                    <button onClick={this.handleButtonClicked.bind(this)}>
-                        Submit
-                    </button>
-                </div>
+                        />
+                        <button onClick={this.handleButtonClicked.bind(this)} className={"newarticle"}>
+                            Submit
+                        </button>
+                        </div>
+                    </div>
+            </div>
                 <form onSubmit={this.DeleteAll} >
                     <input type="submit" value="Delete All Articles" />
                 </form>
