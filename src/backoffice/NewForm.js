@@ -65,7 +65,12 @@ class NewForm extends Component {
         })
             .then(res=>res.json())
             .then((data)=>{
-                console.log(data);
+                if(data !== null){
+                    alert("Article added successfully");
+                }
+                else{
+                    alert("Error adding article");
+                }
             });
     }
     DeleteAll = event => {
