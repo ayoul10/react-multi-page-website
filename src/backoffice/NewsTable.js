@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import './NewsTableStyle.css'
+import './NewsTableStyle.css';
 
 class NewsTable extends Component{
     constructor(props) {
